@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <title>student Portfolio</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
+    a:link{
+        color:white;
+        background-color:transparent;
+        text-decoration: none;
+    }
+    a:hover{
+        color:rgb(10, 206, 250);
+        background-color:transparent;
+        text-decoration: none;
+    }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        -outline: 0;
+        font-family:Roboto, sans-serif, arial;
+        }
+        html,body 
+          {
+          font-size: 14px;
+          font-weight: 400;
+          min-height:100vh;
+          display:flex;
+          flex-direction:column;
+          background-color:black;
+          background-position:center;
+          color: #fff;
+        }
+        .container {
+          width: 1100px;
+          margin: 0px auto;
+          display: table;
+        }
+        .width-33 {
+          width: 33%;
+          float: left;
+        }
+        .width-66 {
+          width: 66%;
+          float: left;
+        }
+        /*MENU SECTION*/
+        .main-panel {
+          width: 100%;
+          float: left;
+          padding-top: 20px;
+          padding-bottom: 50px;
+          height: 100vh;
+        }
+
+        .logo {
+          font-size: 40px;
+          font-weight: 600;
+        }
+
+        .span-col {
+          color: #fe38ea;
+        }
+
+        nav {
+          float: right;
+        }
+
+        nav a {
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 500;
+          margin-left: 20px;
+          color: white;
+        }
+        .span{
+            color:#B22485;
+        }
+        /*MAIN BANNER*/
+        .width-50 {
+          float: left;
+          width: 50%;
+        }
+        .banner-section {
+          width: 100%;
+          float: left;
+          margin-top: 25vh;
+        }
+        .banner-section h1 {
+          font-size: 48px;
+          margin-top: 10px;
+          font-weight: bolder;
+        }
+        .banner-section h2 {
+          font-size: 20px;
+          line-height: 25px;
+          margin-top: 10px;
+          font-weight: 400;
+        }
+        .banner-section a {
+          float: left;
+          text-decoration: none;
+          font-size: 18px;
+          margin-top: 20px;
+          border-radius: 50%;
+          text-align: center;
+          border: 2px solid #ffbf35;
+          color: #ffbf35;
+          margin-left: 10px;
+          height: 50px;
+          width: 50px;
+          line-height: 50px;
+        }
+        /*MAIN BANNER IMAGE*/
+        .main-panel img {
+          margin-top: 10%;
+          width: 100%;
+          margin-left: 10%;
+        }
+        /*ABOUT US SECTION*/
+        .main-section {
+          width: 100%;
+          float: left;
+          padding: 110px 0px 110px 0px;
+        }
+        .width-100 {
+          width: 100%;
+          float: left;
+        }
+        .mt-20 {
+          margin-top: 20px;
+        }
+        .heading-text {
+          width: 100%;
+          float: left;
+          font-size: 35px;
+          text-align: center;
+          margin-bottom: 50px;
+          color: #ffbf35;
+        }
+        .about-img {
+          width: 100%;
+          padding: 0px 50px;
+          margin-top: 20px;
+        }
+        .about-us {
+          width: 100%;
+          float: left;
+          padding: 20px;
+        }
+        .about-us p {
+          font-size: 16px;
+          margin-top: 15px;
+          line-height: 27px;
+        }
+        table {
+            width: 100%;
+          }
+          table th,
+          table td {
+            font-size: 16px;
+            text-align: left;
+            padding: 5px 0px;
+          }
+        /*SERVICE SECTION*/
+        .service-list {
+          padding: 40px;
+          margin-top: 35px;
+          background: #262626;
+          border-radius: 15px;
+          width: 94%;
+          float: left;
+        }
+
+        .service-list i {
+          font-size: 50px;
+          color: #ffbf35;
+          width: 70px;
+          float: left;
+        }
+
+        .service-list h3 {
+          font-size: 28px;
+          margin-top: 8px;
+          margin-bottom: 15px;
+        }
+
+        .service-list p {
+          font-size: 15px;
+          line-height: 25px;
+        }
+        /*CONTACT US SECTION*/
+        .contact form {
+          width: 66%;
+          margin: 0px auto;
+        }
+        .contact input,
+        textarea {
+          width: 100%;
+          float: left;
+          margin-bottom: 20px;
+          height: 40px;
+          padding: 10px;
+          border: 1px solid #a1a1a1;
+        }
+        .contact textarea {
+          height: 80px;
+        }
+        .contact button {
+          width: 100%;
+          float: left;
+          margin-bottom: 20px;
+          height: 40px;
+          padding: 10px;
+          background: #ffbf35;
+          color: #fff;
+          border: none;
+          font-size: 16px;
+        }
+        .contact h3 {
+          font-size: 26px;
+          text-align: center;
+          margin-top: 60px;
+          color: #ffbf35;
+        }
+        .contact h4 {
+          font-size: 22px;
+          text-align: center;
+          margin-top: 10px;
+        }
+        .contact p {
+          text-align: center;
+          font-size: 16px;
+          margin-top: 5px;
+        }
+        /* FOOTER SECTION  */
+        footer{
+          background: #605c89;
+          padding: 15px 0;
+          text-align: center;
+          font-family: 'Poppins', sans-serif;
+        }
+        footer .text span{
+          font-size: 17px;
+          font-weight: 400;
+          color: #fff;
+        }
+        footer .text span a{
+          font-weight: 500;
+          color: #FFF;
+        }
+        footer .text span a:hover{
+          text-decoration: underline;
+        }
+      </style>
+ </head>
+ <body>
+<div class="main-panel">
+    <div class="container">
+      <div class="width-33 logo">Port<span class="span-col">folio</span>
+      </div>
+      <div class="width-66">
+      <nav>
+          <a href="#home">Home</a>
+          <a href="#about">About </a>
+          <a href="#service">Services</a>
+          <a href="#contact">contact us</a>
+    </nav>
+      </div>
+    </div>
+    <!------MAIN BANNERR------>
+<div class="container " id="home">
+    <div class="width-50">
+      <div class="banner-section">                        
+        <h1>Developer <span class="span-col">Rassika</span>
+        </h1>
+        <h2>- I'm a BCA student of Jawahar science college, Designing and Exploring interactive websites 
+              especially in front-end.
+        </h2>
+        <a href="#">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+    </div>
+    <div class="width-50">
+      <img  style="border-radius:15px;box-shadow:15cm"src="pi.jpg">
+    </div>
+  </div>
+  </div>
+  <!------ABOUT ME SECTION------>
+<div class="main-section bg-lightgrey" id="about">
+  <div class="container">
+    <div class="width-50">
+      <img src="pi2.png" class="about-img">
+    </div>
+    <div class="width-50">
+      <div class="about-us">
+        <h2 class="heading-text">About Me</h2>
+        <h3>I am available for web Design Project</h3>
+        <p>Hi, I am Rassika, From cuddalore district. I am a BCA student of Jawahar science college. Designing the webpages especially in front-end is my work</p>
+        <div class="width-50 mt-20">
+          <table cellspacing="8" cellpadding="8">
+            <tr>
+              <th>Name:</th>
+              <td>Rassika K</td>
+            </tr>
+            <tr>
+              <th>Email:</th>
+              <td> cdmrassika@gmail.<br>com</td>
+            </tr>
+            <tr>
+              <th>Birthday:</th>
+              <td> 19 December, 2003</td>
+            </tr>
+            <tr>
+             <th>University for study:</th>
+              <td> Annamalai University</td>
+            </tr>
+          </table>
+        </div>
+        <div class="width-50 mt-20">
+          <table cellspacing="8" cellpadding="8">
+            <tr>
+              <th>Phone:</th>
+              <td>(+91) 9655-859-820</td>
+            </tr>
+            <tr>
+              <th>City:</th>
+              <td>Neyveli,cuddalore</td>
+            </tr>
+            <tr>
+              <th>Field of study:</th>
+              <td>Computer Application</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!------SERVICE SECTION------>
+<div class="main-section" id="service">
+    <div class="container">
+      <h2 class="heading-text">Service</h2>
+      <div class="width-50">
+        <div class="service-list">
+          <i class="fa fa-instagram"></i>
+          <h3>Web Design</h3>
+          <p>I will design a webpages which should creating a big website,those are more interactive and user-friendly.</p>
+        </div>
+      </div>
+      <div class="width-50">
+        <div class="service-list">
+          <i class="fa fa-reddit"></i>
+          <h3>Creative Design</h3>
+          <p>I will create all the websites with more interactions and animations including image,audio and video files</p>
+        </div>
+      </div>
+      <div class="width-50">
+        <div class="service-list">
+          <i class="fa fa-video-camera"></i>
+          <h3>Video Editing</h3>
+          <p>I will make your videos creation with more effects and edit your viedos with HD quality by using AI tools.</p>
+        </div>
+      </div>
+      <div class="width-50">
+        <div class="service-list">
+          <i class="fa fa-camera"></i>
+          <h3>Photography</h3>
+          <p>The Photography is an art which says "Every moment is captured with one click" I will make all your photos as Delightful Memory. </p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+<!-------------CONTACT ME SECTION----------------------->
+<div class="main-section contact bg-lightgrey" id="contact">
+    <div class="container">
+      <h2 class="heading-text">Contact Me</h2>
+      <div class="width-100">
+        <form>
+          <input type="text" placeholder="Full Name...">
+          <input type="text" placeholder="Full Email Id...">
+          <input type="text" placeholder="Full Mobile No...">
+          <textarea placeholder="Enter Address..."></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="width-33">
+        <h3>
+          <i class="fa fa-map-marker"></i>
+        </h3>
+        <h4>Address</h4>
+        <p>No:53-E Type-1 Quaters,Block-22<br>Neyveli</p>
+      </div>
+      <div class="width-33">
+        <h3>
+          <i class="fa fa-phone"></i>
+        </h3>
+        <h4>Phone</h4>
+        <p>+91 96 55 85 9820</p>
+      </div>
+      <div class="width-33">
+        <h3>
+          <i class="fa fa-envelope-o"></i>
+        </h3>
+        <h4>Email</h4>
+        <p>cdmrassika@gmail.com</p>
+      </div>
+    </div>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer">
+        <a href="your-cv-file.pdf" class="download-button" download>Download CV</a>
+      </div>
+      <div class="text">
+        <span>Annamalai University | <a href="#">Jawahar Science College</a> | &#169; 2023 K Rassika</span>
+      </div>
+    </footer>
+  <script>
+     document.addEventListener("DOMContentLoaded", function () {
+    const homeLink = document.querySelector('a[href="#home"]');
+    const aboutLink = document.querySelector('a[href="#about"]');
+    const serviceLink = document.querySelector('a[href="#service"]');
+    const contactLink = document.querySelector('a[href="#contact"]');
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            window.scrollTo({
+                top: section.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+    homeLink.addEventListener("click", function (event) {
+        event.preventDefault();
+        scrollToSection("home");
+    });
+    aboutLink.addEventListener("click", function (event) {
+        event.preventDefault();
+        scrollToSection("about");
+    });
+    serviceLink.addEventListener("click", function (event) {
+        event.preventDefault();
+        scrollToSection("service");
+    });
+    contactLink.addEventListener("click", function (event) {
+        event.preventDefault();
+        scrollToSection("contact");
+    });
+});
+  </script>
+</body>
+</html>
